@@ -1,0 +1,151 @@
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+h2 {
+	font-size: 30px !important;
+}
+html,body{
+	background-color: #FFFFFF;
+}
+.pointer{
+	cursor: pointer;/*手型*/
+}
+
+/* -----------------------------1、主页 导航栏---------------------------------------------*/
+@font-face {
+  font-family: 'iconfont';  /* project id 402699 */
+  src: url('//at.alicdn.com/t/font_402699_08vo9eg9xav2t9.eot');
+  src: url('//at.alicdn.com/t/font_402699_08vo9eg9xav2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_402699_08vo9eg9xav2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_402699_08vo9eg9xav2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_402699_08vo9eg9xav2t9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.c-red{
+	color: red;
+}
+.cl{
+	min-height:40px;
+	line-height: 40px;
+	margin:10px 0;
+}
+.formControls input,.formControls select{
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	height: 40px;
+}
+.form-label{
+	text-align: right;
+}
+.showImg{
+	border: 1px solid #CCCCCC;
+	cursor: pointer;/*手型*/
+}
+label.error{
+	color:#FF0000;
+}
+.i18ntext{
+	font-style: normal;
+	font-size: 14px;
+}
+.radio_input{
+	margin: 0 !important;
+	vertical-align: middle;
+}
+.btn-div{
+	border: 1px solid #337AB7;
+	color: #337AB7;
+}
+.iconfont{
+	vertical-align: middle;
+}
+.search-input,.search-select{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #337AB7;
+}
+.my-nav-tabs li{
+	min-width: 120px;
+}
+.my-nav-tabs li a{
+	text-align: center;
+}
+.my-nav-tabs>li.active>a,.my-nav-tabs>li.active>a:focus, .my-nav-tabs>li.active>a:hover{
+	background-color:#337AB7;
+	color: #FFF;
+}
+/*权限控制样式*/
+.authority{
+	display: none;
+}
+.filter_div{
+	margin-top:5px;
+	
+}
+.filter_div div{
+	display: inline-block;
+}

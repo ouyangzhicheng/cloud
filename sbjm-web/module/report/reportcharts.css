@@ -1,0 +1,144 @@
+.box-header{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	height: 120px;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items:center;
+}
+.membercard{
+	height: 100px;
+	width: 19%;
+	min-width: 195px;
+	position: relative;
+	border-radius: 3px;
+}
+.membercard p{
+	margin-left: 10px;
+	color: #FFFFFF;
+}
+.right{
+	position: absolute;
+	right:10px;
+	font-size: 48px;
+	top:16px;
+	color: #FFFFFF;
+	opacity: 0.3;
+}
+.name{
+	margin: 7px 0 0 0;
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+}
+.number{
+	height: 32px;
+    line-height: 32px;
+    font-size: 30px;
+    margin: 0;
+}
+.text{
+	margin: 0;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+}
+.box-body1,.box-body2{
+	border: 1px solid #dbdbdb;
+}
+.header{
+	height: 49px;
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+}
+.header .title{
+	float: left;
+    height: 100%;
+    margin: 0;
+    line-height: 49px;
+    text-indent: 20px;
+    font-size: 20px;
+    color: #808080;
+    font-weight: lighter;
+}
+.header .input{
+	float: right;
+    width: 138px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 20px;
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+}
+.header .dataCheck{
+	position: relative;
+    float: right;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    margin-top: 8px;
+    background: #ebf5ff;
+    border-radius: 3px;
+}
+.header .dataCheck i{
+	width: 10px;
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 30px;
+    float: left;
+    color: #2e95fb;
+}
+.header .dataCheck .title{
+	text-indent: 10px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.div-webkit-1{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	height: 280px;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items:center;
+}
+.block-list{
+	height: 280px;
+	width: 24%;
+	position: relative;
+	border-radius: 3px;
+}
+.top-text{
+	height: 22px;
+    line-height: 22px;
+    margin: 17px 0 0 0;
+    font-size: 16px;
+    color: #4c4c4c;
+    text-indent: 20px;
+}
+.name-title{
+	margin: 0;
+    text-indent: 20px;
+    height: 30px;
+    line-height: 32px;
+    font-size: 28px;
+    color: #000;
+}
+.two-text{
+	text-indent: 20px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0;
+}
+.showTexttitle{
+	position: absolute;
+	left:20px;
+	bottom: 95px;
+}
+.box-body2{
+	margin-top: 20px;
+}

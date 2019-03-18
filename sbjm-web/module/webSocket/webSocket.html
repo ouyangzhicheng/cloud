@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>websocket.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html" charset="UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<!-- 独立css -->
+
+  </head>
+  
+  <body>
+	<div>  
+	<table style="width:100%;">
+		<thead>
+		<tr style="width:100%;">
+		<td style="width:50%;"><b>一对一队列接收信息：</b></td>
+		<td style="width:50%;"><b>一对多广播接收信息：</b></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td><span id="responseQueue"></span></td>
+		<td><span id="responseTopic"></span></td>
+		</tr>
+		</tbody>
+	</table>
+		       
+	   
+	</div>
+	
+	<!--引入公共js-->
+	<script src="../util/commonjs.js?v=1.1"></script>
+
+	<!-- 独立JS -->
+	<script type="text/javascript" src="jquery.min.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="webSocket.js" charset="utf-8"></script>
+	<script type="text/javascript" src="sockjs.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="stomp.js" charset="utf-8"></script>
+  </body>
+</html>

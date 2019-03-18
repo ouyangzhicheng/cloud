@@ -1,0 +1,13 @@
+body .sbjm_edit_layer .layui-layer-title{background:#2E3454; color:#fff; border: none;}
+body .sbjm_edit_layer .layui-layer-btn{border-top:1px solid #E9E7E7}
+body .sbjm_edit_layer .layui-layer-btn a{background:#333;}
+body .sbjm_edit_layer .layui-layer-btn .layui-layer-btn0{background:#2E3454;}
+body .sbjm_edit_layer .layui-layer-btn .layui-layer-btn1{background:#999;}
+.layui-layer-close1:before {
+  font-family:"iconfont" !important;
+  content: "\e624"; 
+  color:#fff;
+}
+.layui-layer{
+	max-height: 95%;
+}

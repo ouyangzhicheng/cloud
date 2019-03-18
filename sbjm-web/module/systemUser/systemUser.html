@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+	  <meta http-equiv="Cache" content="no-cache">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+    <title class="head-title"></title>
+    <!--引入公共 css 文件-->
+    <script src="../util/commoncss.js?v=1"></script>
+    <!--独立样式请在以下部分引入-->
+    <link href="systemUser.css?v=0.1" rel="stylesheet">
+    
+    <link rel="Bookmark" href="img/gym/icon32.ico" >
+    <link rel="Shortcut Icon" href="img/gym/icon32.ico" />
+</head>
+<body>
+
+    
+<div class="panel panel-default">
+    <div class="panel-heading"><div class="panel-title">系统用户管理 </div></div>        
+    <div class="panel-body">
+    		<div class="box-header">
+    		<div style="margin-left:10px;"><button class="btn btn-info"  onclick="displayAddUserFrame()">添加用户</button></div>
+				<div class="search_import">
+					<label class="tureName">姓名</label>:<input type="text" id="search_tureName" name="search_tureName" class="search-input search_input_width" />				  
+				</div>
+				<div style="margin-left:10px;"><button class="btn btn-primary"  onclick="searchReload()">搜索</button></div>
+			</div>
+        <table id="systemUserTable" class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>出生日期</th>
+                    <th>简介</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+     		</tbody>
+        </table>
+    </div>
+</div>
+
+	<!--添加/编辑框-->
+	<div class = "addOrEdit_systemUser" style="display: none;margin:0 15px;">
+		<form id = "addOrEdit_systemUserForm">
+			<input type="hidden" id="userInfoId" name="userInfoId">
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"></label>
+				<div class="formControls col-xs-3 col-sm-3"></div>
+				
+				<label class="form-label col-xs-3 col-sm-2"></label>
+				<div class="formControls col-xs-3 col-sm-3"></div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">头像</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="hidden" id="iconUrl" name="iconUrl">
+					<input type="hidden" id="iconBase64" name="iconBase64">
+					<input id="iconBase64_file" type="file" style="display: none;"/>
+					<div class="iconBase64_showImg" style="width: 100px;height: 100px;white-space: nowrap;">
+						<img id="iconBase64_img" style="width: 100%;height: 100%;" onclick="showIcon();" /> 
+						&nbsp;&nbsp;&nbsp;&nbsp;<span id="replacepic" style="cursor: pointer;" onclick="$('#iconBase64_file').click();">替换</span>
+					</div>
+					<div>(请选用.jpg,.png格式的图片，大小不超过300k.300*300)</div> 
+				</div>
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red"></span><i class="i18ntext">创建时间</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text"  id="createTime" name="createTime" style="width:220px" disabled="disabled">
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">用户账号</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text" id="accountId" name="accountId" style="width:220px" maxlength="50"  required>
+				</div>
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">用户编号</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text" id="userNumber" name="userNumber" style="width:220px" placeholder="自动生成" maxlength="50" disabled="disabled">
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">昵称</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text" id="nickName" name="nickName" style="width:220px" maxlength="50" required>
+				</div>
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">性别</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input class="radio_input" type="radio" name="sex" value="0" id="sex_woman" checked="checked"><label for="sex_woman" >女生</label>
+					<input class="radio_input" type="radio" name="sex" value="1" id="sex_man"><label for="sex_man" >男生</label>
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">手机号码</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text"  id="phone" name="phone" style="width:220px" minlength="11" maxlength="11" required>
+				</div>
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">电子邮件</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="email" class="input-text"  id="email" name="email" style="width:220px"  required>
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">真实姓名</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text"  id="tureName" name="tureName" style="width:220px" maxlength="18" required>
+				</div>
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">出生日期</i>:</label>
+				<div class="formControls col-xs-3 col-sm-3">
+					<input type="text" class="input-text" id="birthday" name="birthday" style="width:220px" required>
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">个人简介</i>:</label>
+				<div class="formControls col-xs-9 col-sm-9">
+					<input type="text" class="input-text" id="briefIntroduction" name="briefIntroduction" style="width:600px" maxlength="100" required>
+				</div>
+			</div>			
+			<div id="roleEditDiv" class="authorityAdmin row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext roleText">角色:</i></label>
+				<div id="roleDiv" class="formControls col-xs-9 col-sm-9">
+				<!-- 
+					<input class="radio_input" type="checkbox" name="roleId" value="1" onclick="return false;"><label for="role1">超级管理员</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="radio_input" type="checkbox" name="roleId" value="2" onclick="return false;"><label for="role2">主管</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="radio_input" type="checkbox" name="roleId" value="3" ><label for="role3">教练</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="radio_input" type="checkbox" name="roleId" value="4" ><label for="role4">会籍</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="radio_input" type="checkbox" name="roleId" value="5" ><label for="role5">会员</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="radio_input" type="checkbox" name="roleId" value="6" ><label for="role6">前台</label>&nbsp;&nbsp;&nbsp;&nbsp;
+				 -->
+				</div>
+			</div>	
+			<div class="row cl">
+				<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span><i class="i18ntext">状态</i>:</label>
+				<div class="formControls col-xs-9 col-sm-9">
+					<input class="radio_input" type="radio" name="status" value="1" id="status_1" checked="checked"><label for="status_1">使用中</label>
+		            <input class="radio_input" type="radio" name="status" value="0" id="status_2"><label for="status_2" >停用</label>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class = "showBigIcon" style="display: none;text-align: center;vertical-align: center;">
+		<img id="iconBase64_big_img" /> 
+	</div>
+</body>
+<!--引入公共js-->
+<script src="../util/commonjs.js?v=1.1"></script>
+<!--独立js请在以下引入-->
+<script src="systemUser.js"></script>
+
+</html>

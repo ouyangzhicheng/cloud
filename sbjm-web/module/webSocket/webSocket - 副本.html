@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html" charset="UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<!-- 独立css -->
+
+  </head>
+  
+  <body onload="disconnect()">
+<noscript><h2 style="color: #ff0000">貌似你的浏览器不支持websocket</h2></noscript>
+<div>
+    <div>
+        <button id="connect" onclick="connect();">连接</button>
+        <button id="disconnect" disabled="disabled" onclick="disconnect();">断开连接</button>
+    </div>
+    <div id="conversationDiv">
+        <label>输入你的名字</label><input type="text" id="name" />
+        <button id="sendName" onclick="sendName();">发送</button>
+        <p id="response"></p>
+    </div>
+</div>
+	
+    <!-- 公共JS -->
+	<script type="text/javascript" src="../util/common.js"></script>
+	<!-- 独立JS -->
+	<script type="text/javascript" src="webSocket.js" charset="utf-8"></script>
+	<script type="text/javascript" src="sockjs.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="stomp.js" charset="utf-8"></script>
+  </body>
+</html>

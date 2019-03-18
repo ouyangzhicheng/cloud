@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dropzone.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html;" charset="UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+ 
+  </head>
+  
+  <body>
+  
+  <div id="preview-template"></div>
+  <div style="font-size: 0;padding-left: 15px;display: inline-block;">
+  <div data-toggle="distpicker" class="distpicker">
+	<div>
+		<select id="province" name="province" class="select"  style="width:160px" required>
+		</select>
+	</div>
+	<div>
+		<select id="city" name="city" class="select"  style="width:160px" required>
+		</select>
+	</div>
+	<div>
+		<select id="county" name="county" class="select"  style="width:160px" required>
+		</select>
+	</div>
+	</div>
+</div>
+	<!-- 公共JS -->
+	<script type="text/javascript" src="../util/commonjs.js"></script>
+	<!-- 独立JS -->
+	<script type="text/javascript" src="../../lib/distpicker/distpicker.data.js"></script>
+	<script type="text/javascript" src="../../lib/distpicker/distpicker.js"></script>
+	<script type="text/javascript" src="dropzone.js"></script>
+  </body>
+</html>

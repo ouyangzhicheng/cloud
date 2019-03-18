@@ -1,0 +1,9 @@
+document.write("<link href=\"../../lib/bootstrap/css/bootstrap.min.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../css/main.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../lib/dataTables.bootstrap.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../lib/font-awesome/css/font-awesome.min.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../lib/dist/css/AdminLTE.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../lib/dist/css/skins/_all-skins.min.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../lib/Ionicons/css/ionicons.min.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../css/iframecss.css?v=0.1\" rel=\"stylesheet\">");
+document.write("<link href=\"../../lib/layer-v2.4/layer/mylayer.css?v=0.1\" rel=\"stylesheet\">");

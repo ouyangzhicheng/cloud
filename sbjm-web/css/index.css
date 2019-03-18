@@ -1,0 +1,18 @@
+ /**覆盖父级content的类的高度**/
+ .content{
+
+	border-top: 1px solid #DCDCDC;
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+	background-color:white;
+	position: absolute;
+	top: 65px;
+	bottom: 0px;
+	left: 246px;
+	right: 15px;
+	 }
+.box-shadow-1{
+	-webkit-box-shadow:0 0 10px 4px #D4D7E0;  
+	-moz-box-shadow:0 0 10px 4px #D4D7E0;  
+	box-shadow:0 0 10px 4px #D4D7E0;  
+}

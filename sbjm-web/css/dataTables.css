@@ -1,0 +1,6 @@
+.dataTable>thead th{
+	text-align: center;
+	padding-right: 8px !important;
+}
+table tr:hover td{background-color:#E6E6FA;}
+

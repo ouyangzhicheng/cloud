@@ -1,0 +1,36 @@
+
+.dataTable_div{
+	margin-top:20px;
+}
+.box-body{
+	margin-top:20px;
+}
+.box-header{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	height: 60px;
+	flex-direction: row;
+	justify-content:flex-start;
+	align-items:center;
+}
+.new_btn{
+	position: absolute;
+	right: 15px;
+}
+.search_import{
+	margin-left: 50px;
+}
+
+.search_btn{
+	margin-left: 10px;
+}
+
+.search_input_width{
+	width: 130px;
+}
+.btn_blue{
+	padding: 4px 10px 4px 10px;
+	color:#5098d6;
+}
+
+ 
