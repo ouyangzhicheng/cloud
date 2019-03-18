@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ccw-eureka/ccw-eureka.iml" filepath="$PROJECT_DIR$/ccw-eureka/ccw-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccw-feign/ccw-feign.iml" filepath="$PROJECT_DIR$/ccw-feign/ccw-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccw-ribbon/ccw-ribbon.iml" filepath="$PROJECT_DIR$/ccw-ribbon/ccw-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccw-service-providers/ccw-service-providers.iml" filepath="$PROJECT_DIR$/ccw-service-providers/ccw-service-providers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccw-springcloud.iml" filepath="$PROJECT_DIR$/ccw-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccw-zuul/ccw-zuul.iml" filepath="$PROJECT_DIR$/ccw-zuul/ccw-zuul.iml" />
+    </modules>
+  </component>
+</project>
