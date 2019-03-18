@@ -31,7 +31,7 @@ public class ChatRoomController {
     @RequestMapping(value = "/sendChatValue", method = RequestMethod.POST)
     public @ResponseBody
     BaseResponse sendChatValue(@RequestBody ChatRoomRequest request) {
-        System.out.println("*******************123");
+        System.out.println("*******************123879798");
         BaseResponse response = new BaseResponse();
         //定义一个目的地（队列类型）
         Destination queue = new ActiveMQQueue(request.getName() + ".queue");
