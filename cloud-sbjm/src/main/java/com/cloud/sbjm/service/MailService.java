@@ -1,0 +1,1 @@
+package com.cloud.sbjm.service;import com.cloud.sbjm.onput.MailRequest;import com.cloud.sbjm.onput.MailResponse;/** * @author ouyangzhicheng * @version V1.0 * @Title: MailService.java * @Description: 邮件处理接口 * @date 2018年2月6日 */public interface MailService {    public MailResponse sendMail(MailRequest request);}

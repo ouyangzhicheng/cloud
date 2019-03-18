@@ -1,0 +1,1 @@
+package com.cloud.sbjm.onput;public class MailResponse extends BaseResponse {    private String mailVerificationCode;    public String getMailVerificationCode() {        return mailVerificationCode;    }    public void setMailVerificationCode(String mailVerificationCode) {        this.mailVerificationCode = mailVerificationCode;    }}

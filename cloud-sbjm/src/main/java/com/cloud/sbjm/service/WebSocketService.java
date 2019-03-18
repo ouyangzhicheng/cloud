@@ -1,0 +1,1 @@
+package com.cloud.sbjm.service;public interface WebSocketService {    /**     * 后台主动推送广播消息     */    public void pushMessage();}
